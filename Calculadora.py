@@ -94,6 +94,8 @@ class MainApp(App):
         xdi = current.rfind("/")
         check = [int(xso), int(xsu), int(xmu), int(xdi)]
         check = max(check)
+        if check == -1:
+            check = 0
         check = current.rfind(".", check)
         return check
 
